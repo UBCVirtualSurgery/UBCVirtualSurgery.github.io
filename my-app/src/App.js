@@ -3,7 +3,7 @@ import ButtonAppBar from "./Menu";
 
 
 function App() {
-    return (ButtonAppBar)
+    return (<ButtonAppBar/>)
 }
 
 export default App;
