@@ -1,6 +1,6 @@
 {
   "name": "my-app",
-  "homepage": "http://matthewmong.github.io/",
+  "homepage": "https://matthewmong.github.io/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
