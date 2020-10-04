@@ -3,7 +3,11 @@ import ButtonAppBar from "./Menu";
 
 
 function App() {
-    return (<ButtonAppBar/>)
+    return (
+        <React.Fragment>
+            <ButtonAppBar/>
+        </React.Fragment>
+    )
 }
 
 export default App;
