@@ -45,9 +45,9 @@ export default function ButtonAppBar() {
                 <Fade in={true} timeout={4000}>
                     <AppBar position="fixed" style={{alignItems: "center", overflow: 'auto'}}>
                         <Toolbar>
-                            <GrowButton title={"Publications"} someref={PublicationsRef}/>
-                            <GrowButton title={"Members"} someref={MembersRef}/>
                             <GrowButton title={"Projects"} someref={ProjectsRef}/>
+                            <GrowButton title={"Members"} someref={MembersRef}/>
+                            <GrowButton title={"Publications"} someref={PublicationsRef}/>
                             <GrowButton title={"About"} someref={AboutRef}/>
                         </Toolbar>
                     </AppBar>
@@ -55,7 +55,7 @@ export default function ButtonAppBar() {
             </div>
             <BackgroundVideo/>
             <Typography ref={ProjectsRef} align='center' variant='h2' gutterBottom={true}>
-                Current Projects
+                Projects
             </Typography>
             <TabsWrappedLabel/>
             <Typography ref={MembersRef} align='center' variant='h2' gutterBottom={true}>

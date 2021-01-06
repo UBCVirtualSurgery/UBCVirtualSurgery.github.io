@@ -9,16 +9,16 @@ import CardActions from '@material-ui/core/CardActions';
 import Collapse from '@material-ui/core/Collapse';
 import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
-import ShareIcon from '@material-ui/icons/Share';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
 const useStyles = makeStyles((theme) => ({
     root: {
-        maxWidth: '100%',
+        width:'90vmin',
+        maxWidth: 500,
     },
     media: {
-        // height: 0,
-        // paddingTop: '40%',
+        height: 0,
+        paddingTop: '56.25%', // 16:9
     },
     expand: {
         transform: 'rotate(0deg)',
@@ -32,7 +32,7 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
-export default function ProjectCard() {
+export default function ProjectCard(props) {
     const classes = useStyles();
     const [expanded, setExpanded] = React.useState(false);
 
@@ -43,26 +43,20 @@ export default function ProjectCard() {
     return (
         <Card className={classes.root}>
             <CardHeader
-                title="VR Project"
-                subheader="September 14, 2020"
+                title={props.title}
+                subheader={props.date}
             />
             <CardMedia
                 className={classes.media}
-                src={require("./giphy.mp4")}
-                component='video'
-                title="Project Video"
-                autoPlay
-                loop
+                image={require('./images/'+props.image+'.jpg')}
+                title="Project Photo"
             />
             <CardContent>
                 <Typography variant="body2" color="textSecondary" component="p">
-                    VR Games
+                    <b>Status:</b> {props.status}
                 </Typography>
             </CardContent>
             <CardActions disableSpacing>
-                <IconButton aria-label="share">
-                    <ShareIcon />
-                </IconButton>
                 <IconButton
                     className={clsx(classes.expand, {
                         [classes.expandOpen]: expanded,
@@ -77,7 +71,7 @@ export default function ProjectCard() {
             <Collapse in={expanded} timeout="auto" unmountOnExit>
                 <CardContent>
                     <Typography paragraph>
-                        Stuff about VR and other things I guess
+                        {props.text}
                     </Typography>
                 </CardContent>
             </Collapse>

@@ -12,7 +12,7 @@ import Typography from '@material-ui/core/Typography';
 import IconButton from "@material-ui/core/IconButton";
 import Collapse from "@material-ui/core/Collapse";
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-
+import Link from "@material-ui/core/Link";
 const useStyles = makeStyles((theme) => ({
     root: {
         width: 300,
@@ -44,7 +44,7 @@ export default function MediaCard(props) {
         <Card className={classes.root}>
                 <CardMedia
                     className={classes.media}
-                    image={require("./"+props.image+".jpg")}
+                    image={require("./images/"+props.image+".jpg")}
                     title="Profile Photo"
                 />
                 <CardContent className={classes.content}>
@@ -63,13 +63,13 @@ export default function MediaCard(props) {
                 </CardContent>
             </Collapse>
             <CardActions>
-                <IconButton color="primary">
+                <IconButton color="primary" href={props.github} component={Link} target="_blank" rel="noopener">
                     <GitHubIcon />
                 </IconButton>
-                <IconButton color="primary">
+                <IconButton color="primary" href={props.linkedin} component={Link} target="_blank" rel="noopener">
                     <LinkedInIcon/>
                 </IconButton>
-                <IconButton color="primary">
+                <IconButton color="primary" href={'mailto:'+props.email} component={Link} target="_blank" rel="noopener">
                     <EmailIcon/>
                 </IconButton>
                 <IconButton

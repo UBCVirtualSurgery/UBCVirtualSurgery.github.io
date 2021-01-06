@@ -23,22 +23,19 @@ export default function Member() {
         <React.Fragment>
             <Grid container className={classes.root} spacing={2} justify={"center"} style={{paddingBottom: '30px'}}>
                 <Grid item>
-                    <MediaCard name={"Prisman"} title={"Primary Investigator"} image={"unnamed"} descriptor={"Something something big words"} />
+                    <MediaCard name={"Eitan Prisman"} title={"Primary Investigator"} image={"unnamed"} descriptor={"Something something big words"} />
                 </Grid>
                 <Grid item>
-                    <MediaCard name={"Someone Else"} title={"Research Assistant"} image={"unnamed"} descriptor={"You can write whatever you want in this spot and it will fit to the card"}/>
+                    <MediaCard name={"Anat Dinur"} title={"Fellow"} image={"unnamed"} descriptor={"this is a test of overflow on the card object within the grid"}/>
                 </Grid>
                 <Grid item>
-                    <MediaCard name={"Someone Else"} title={"Research Assistant"} image={"unnamed"} descriptor={"this is a test of overflow on the card object within the grid"}/>
+                    <MediaCard name={"Matthew Mong"} title={"Research and Development Co-op"} image={"unnamed"} github={'https://github.com/MatthewMong'} linkedin={'https://linkedin/in/matthewmong'} email={'matthew.mong1999@gmail.com'} descriptor={"You can write whatever you want in this spot and it will fit to the card"}/>
                 </Grid>
                 <Grid item>
-                    <MediaCard name={"Someone Else"} title={"Research Assistant"} image={"unnamed"} descriptor={"this is a test of overflow on the card object within the grid"}/>
+                    <MediaCard name={"Linh Tran"} title={"Research Assistant"} image={"unnamed"} descriptor={"this is a test of overflow on the card object within the grid"}/>
                 </Grid>
                 <Grid item>
-                    <MediaCard name={"Someone Else"} title={"Research Assistant"} image={"unnamed"} descriptor={"this is a test of overflow on the card object within the grid"}/>
-                </Grid>
-                <Grid item>
-                    <MediaCard name={"Someone Else"} title={"Research Assistant"} image={"unnamed"} descriptor={"this is a test of overflow on the card object within the grid"}/>
+                    <MediaCard name={"Kelly Nguyen"} title={"Research Coordinator"} image={"unnamed"} descriptor={"this is a test of overflow on the card object within the grid"}/>
                 </Grid>
             </Grid>
         </React.Fragment>
