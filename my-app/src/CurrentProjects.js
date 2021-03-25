@@ -24,7 +24,7 @@ export default function TabsWrappedLabel() {
                     <ProjectCard title={'Virtual Reality Surgery Planning'} date={'January 3, 2021'} image={'vr'} status={'Prototyping'} text={'In partnership with Imaging Reality we are working to develop a clinically relevant virtual reality application that allows surgeons to preplan surgical reconstructions in virtual space resulting in faster recovery times and more accurate reconstructions. Image credit: Imaging Reality'}/>
                 </Grid>
                 <Grid item>
-                    <ProjectCard title={'Preplanned Surgical Reconstruction'} date={'January 3, 2017'} image={'recon'} status={'Production'} text={'Using 3D printing and computerized tomography scans we have developed software to preplan surgical reconstructions, allowing surgeons to visualize and optimize for patient outcome. This project is currently being tested at Vancouver General Hospital'}/>
+                    <ProjectCard title={'Preplanned Surgical Reconstruction'} date={'January 3, 2017'} image={'Capture'} status={'Production'} text={'Using 3D printing and computerized tomography scans we have developed software to preplan surgical reconstructions, allowing surgeons to visualize and optimize for patient outcome. This project is currently being tested at Vancouver General Hospital'}/>
                 </Grid>
             </Grid>
         </React.Fragment>

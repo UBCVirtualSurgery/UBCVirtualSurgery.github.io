@@ -63,13 +63,13 @@ export default function MediaCard(props) {
                 </CardContent>
             </Collapse>
             <CardActions>
-                <IconButton color="primary" href={props.github} component={Link} target="_blank" rel="noopener">
+                <IconButton color="primary" disabled={!props.github} href={props.github} component={Link} target="_blank" rel="noopener">
                     <GitHubIcon />
                 </IconButton>
-                <IconButton color="primary" href={props.linkedin} component={Link} target="_blank" rel="noopener">
+                <IconButton color="primary" disabled={!props.linkedin} href={props.linkedin} component={Link} target="_blank" rel="noopener">
                     <LinkedInIcon/>
                 </IconButton>
-                <IconButton color="primary" href={'mailto:'+props.email} component={Link} target="_blank" rel="noopener">
+                <IconButton disabled={!props.email} color="primary" href={'mailto:'+props.email} component={Link} target="_blank" rel="noopener">
                     <EmailIcon/>
                 </IconButton>
                 <IconButton
